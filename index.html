@@ -9,18 +9,22 @@
 </head>
 
 <body>
-    <md-input-container class="md-block">
-        <label>Username</label>
-        <input type="text" name="username" ng-model="username" placeholder="Please enter your name" />
-    </md-input-container>
-    <md-input-container class="md-block">
-        <label>Password</label>
-        <input type="password" name="password" ng-model="password" placeholder="Please enter your password" />
-    </md-input-container>
-    <div class="pull-right">
-        <md-button class="md-raised md-primary md-mini">Login</md-button>
-        <a href="">Forget password</a>
+
+    <div ng-app="BlankApp" ng-cloak>
+        <md-input-container class="md-block">
+            <label>Username</label>
+            <input type="text" name="username" ng-model="username" placeholder="Please enter your name" />
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Password</label>
+            <input type="password" name="password" ng-model="password" placeholder="Please enter your password" />
+        </md-input-container>
+        <div class="pull-right">
+            <md-button class="md-raised md-primary md-mini">Login</md-button>
+            <a href="">Forget password</a>
+        </div>
     </div>
+
     <!-- Angular Material requires Angular.js Libraries -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
